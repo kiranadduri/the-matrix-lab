@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Matrix labs</title>
+    <link rel="stylesheet" href="lab.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+</head>
+<body>
+    <div id="div1" ><img src="../lab1.jpg"  >
+        <h1 id="time"></h1>
+        <div id="quotes">
+           
+        </div>
+    </div>
+    <fieldset id="div2" >
+        <h1>cities</h1>
+
+       <fieldset class="d1"><img src="./cloudy.jpg" style="float: left;"><h1 class="c4">cloudy</h1></img><h2 class="c1">24&#8451;</h2><h2  class="c2">Hyd</h2><h3  class="c3">01-21-23</h3> </fieldset>
+       <fieldset class="d1"><img src="./thundr.webp"style="float: right;" ><h1  class="c4">Tunder</h1></img><h2  class="c1">24&#8451;</h2><h2  class="c2">Vsp</h2><h3  class="c3">01-21-23</h3></fieldset>
+       <fieldset class="d1"><img src="./sunny1).jpg" > <h1  class="c4">Sunny</h1></img><h2  class="c1">24&#8451;</h2><h2  class="c2">Akp</h2><h3  class="c3">01-21-23</h3></fieldset>
+    
+        
+        <input placeholder="search city"class="c5">
+       <a href="https://www.accuweather.com/en/in/india-weather"><i class="fas fa-search fa-1x" style="color: black;" id="icon"></i></a>
+    </fieldset>
+    <div id="div3"> <img src="./earth.jpeg" style="height: 600px;"></div>
+    <div id="div4"> <h1>News</h1>
+
+        <fieldset class="b1"><img src="./cloudy.jpg" style="float: left;" class="im"><h1 class="e4">cloudy stroms in manipur</h1></img> </fieldset>
+        <fieldset class="b1"><img src="./thundr.webp"style="float: right;" class="im"><h1  class="e4">Tunder strikes delhi</h1></img></fieldset>
+        <fieldset class="b1"><img src="./sunny1).jpg" class="im"> <h1  class="e4">it'sSummer season in Mumbai </h1></img></fieldset>
+        <fieldset id="div5"><h2 style="color: white;">WHETHERAPP</h2>
+            <table id="table">
+                <tr><td>Home</td>
+                    <td>Contact us</td>
+                </tr>
+                <tr><td>Citie</td>
+                <td>FAQS</td></tr>
+                <tr><td>News</td></tr>
+            </table>
+        </fieldset>
+    </div>
+
+    <script>
+        let time =document.getElementById("time")
+        setInterval(() => {
+            let d =new Date();
+        time.innerHTML=d.toLocaleTimeString();
+        }, 1000);
+        
+    </script>
+</body>
+</html>
